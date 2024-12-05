@@ -135,9 +135,10 @@ The most important thing that I learned/will take away from this project is allo
 
 I also learned how to take a step back from the specifics of my code to be able to explain to a group of people what is the idea behind the code. This was actually much more difficult than expected, as when you are developing you can easily process the steps and how they relate, but when you try to explain that process to someone else who was not there when you were developing, it becomes much more difficult to communincate the process and why you made certain decisions. This will inevitably help me as I continue working in technical roles. 
 
-# EDA
+# Notebooks included:
+## EDA
 This notebook provides general overview of dataset and further look into important variables. It identifies time series trends to further investigate.
-# Modeling
+## Modeling
 Swire Modeling: This is the initial modeling notebook that begins iterating on the Prophet time series model to create a prediction that aligns with our goal of having an anomalous amount of maitenance time flag in the model
 
 Time Series Modeling: This looks at using different types of time series models to create a more accurate prediction. It also looks into the data as a whole to ensure it is a good fit for time series modeling.
