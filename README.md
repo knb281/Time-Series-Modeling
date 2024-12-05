@@ -1,9 +1,5 @@
 # Business Problem and Project Objective
-Introduction:
-Swire Coca-Cola
-Predictive Maintenance Problem Statement Kathryn O’Connor - Kimberly Buesser
-Griffin Brown - Kyle Anderson
- Swire Coca-Cola is a major bottling partner of The Coca-Cola Company in the Western United States. Swire operates 6 production plants across 13 states which support distribution, marketing, and production of Coca-Cola products.
+Swire Coca-Cola is a major bottling partner of The Coca-Cola Company in the Western United States. Swire operates 6 production plants across 13 states which support distribution, marketing, and production of Coca-Cola products.
  
 Problem Statement:
 As the primary bottler of Coca-Cola products in the Western United States, Swire Coca-Cola's operational efficiency affects the entire distribution network. Despite achieving 94% mechanical efficiency, unforeseen machine breakdowns and inadequate predictive maintenance lead to significant downtime. This shortfall in meeting demand results in an annual loss of approximately $60 million in uncaptured revenue. The current process—issuing work orders, waiting for parts, and making repairs—often lacks the foresight to prevent these downtimes, leading to extended production stoppages and impacting overall performance.
@@ -55,10 +51,13 @@ Steps for Implementation
 
 1. Data Collection and Preprocessing
 
-Data Collection: Gather historical data on maintenance times, including:
+Data Collection: 
+
+Gather historical data on maintenance times, including:
 Timestamps of maintenance events.
 Duration of each maintenance event.
 Type of maintenance (preventive or corrective).
+
 Preprocessing:
 Aggregate maintenance durations to a suitable frequency (e.g., daily or weekly totals).
 Handle missing data by interpolation or imputation.
@@ -68,6 +67,7 @@ Handle missing data by interpolation or imputation.
 Decompose Time Series:
 Prophet automatically decomposes the time series into trend, seasonality, and residual components.
 Bottling plants often have cyclical patterns, e.g., higher activity during peak seasons or at specific times of the day/week.
+
 Train the Model:
 Train Prophet on historical maintenance data to capture regular patterns of maintenance time.
 Specify additional regressors if external factors influence maintenance times (e.g., machine usage, production volume, or staff availability).
@@ -82,6 +82,7 @@ Include confidence intervals to represent the expected range of normal behavior.
 Compare Actual vs. Forecasted Values:
 Identify anomalies by calculating residuals (difference between actual and forecasted maintenance times).
 Mark data points outside the forecasted confidence intervals as anomalies.
+
 Thresholds:
 Set thresholds based on the plant's tolerance for deviations.
 
